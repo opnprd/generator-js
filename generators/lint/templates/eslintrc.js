@@ -3,7 +3,10 @@ module.exports = {
     jest: true,
     node: true,
   },
-  parserOptions: { ecmaVersion: 6 },
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module',
+  },
   extends: [
     'eslint:recommended',
   ],
