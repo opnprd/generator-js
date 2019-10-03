@@ -1,7 +1,7 @@
 module.exports = {
   env: { 
     jest: true,
-    node: true
+    node: true,
   },
   parserOptions: { ecmaVersion: 6 },
   extends: [
@@ -11,5 +11,5 @@ module.exports = {
     quotes: ['error', 'single'],
     semi: ['warn', 'always'],
     'comma-dangle': ['warn', 'always-multiline'],
-  }
+  },
 };
