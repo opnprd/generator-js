@@ -11,5 +11,6 @@ module.exports = {
     quotes: ['error', 'single'],
     semi: ['warn', 'always'],
     'comma-dangle': ['warn', 'always-multiline'],
+    'quote-props': ['warn', 'as-needed'],
   },
 };
