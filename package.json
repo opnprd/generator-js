@@ -8,6 +8,9 @@
     "email": "giles.dring@odileeds.org",
     "url": "https://opnprd.com"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "generators"
   ],
