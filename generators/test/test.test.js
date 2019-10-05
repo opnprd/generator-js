@@ -3,7 +3,7 @@ const path = require('path');
 const assert = require('yeoman-assert');
 const helpers = require('yeoman-test');
 
-describe('@opnprd/generator-js:lint', () => {
+describe('@opnprd/generator-js:test', () => {
   beforeAll(() => {
     return helpers
       .run(path.join(__dirname, '.'));
@@ -13,7 +13,7 @@ describe('@opnprd/generator-js:lint', () => {
     assert.file(['jest.config.js']);
   });
 
-  it('sets a dependency on eslint', () => {
+  it('sets a dependency on jest', () => {
     assert.fileContent('package.json', /"jest":.*"\^/);
   });
 });
