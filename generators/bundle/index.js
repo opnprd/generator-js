@@ -1,9 +1,11 @@
 'use strict';
 const Generator = require('yeoman-generator');
 
-const babelVersion = '^7.6.2';
-
 module.exports = class extends Generator {
+  initializing() {
+    this.composeWith(require.resolve('../babel'));
+  }
+
   async prompting() {
     this.answers = await this.prompt([
       {
@@ -27,8 +29,6 @@ module.exports = class extends Generator {
 
     const pkgJson = {
       devDependencies: {
-        '@babel/core': babelVersion,
-        '@babel/preset-env': babelVersion,
         rollup: '^1.22.0',
         'rollup-plugin-babel': '^4.3.3',
         'rollup-plugin-commonjs': '^10.1.0',
