@@ -16,4 +16,8 @@ describe('@opnprd/generator-js:test', () => {
   it('sets a dependency on jest', () => {
     assert.fileContent('package.json', /"jest":.*"\^/);
   });
+
+  it('adds a test script', () => {
+    assert.fileContent('package.json', /"test":.*"jest"/);
+  });
 });

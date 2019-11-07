@@ -7,6 +7,9 @@ module.exports = class extends Generator {
       devDependencies: {
         jest: '^24.9.0',
       },
+      scripts: {
+        test: 'jest',
+      },
     };
 
     // Extend or create package.json file in destination path
